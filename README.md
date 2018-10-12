@@ -14,6 +14,7 @@ Before you start make sure you have installed spacy and the ```en``` model:
 ```python -m spacy download en```
 <br>
 
+You'll also need [textacy](https://chartbeat-labs.github.io/textacy/getting_started/quickstart.html) and [WordCloud](https://amueller.github.io/word_cloud/).
 
 <b>01 - FurryVision(TM)</b> => 
 
