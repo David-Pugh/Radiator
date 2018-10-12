@@ -3,7 +3,7 @@
 See the [spaCy](https://spacy.io) documents.
 
 ![Radiator](/images/220px-Radiator-SFA.jpg)
-
+![Radiator](/images/SFAOK.jpg)
 
 
 Exploring NLP and spaCy using the psychedelia of the Super Furry Animals. SFAok!
