@@ -3,8 +3,7 @@
 See the [spaCy](https://spacy.io) documents.
 
 ![Radiator](/images/220px-Radiator-SFA.jpg) 
-<br>
-![Radiator](/images/SFAOK.png)
+
 
 <br>
 
@@ -26,4 +25,5 @@ You'll also need [textacy](https://chartbeat-labs.github.io/textacy/getting_star
 
 <b>04 - Demons </b>=> Using a spaCy pipeline we will process some lyrics and peform some topic analysis to undertand what type of things the SFA sing about.
 
-
+<br>
+![Radiator](/images/SFAOK.png)
