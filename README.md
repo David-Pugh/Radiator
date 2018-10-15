@@ -2,7 +2,8 @@
 
 See the [spaCy](https://spacy.io) documents.
 
-![Radiator](/images/220px-Radiator-SFA.jpg) ![Radiator](/images/SFAOK.png)
+![Radiator](/images/220px-Radiator-SFA.jpg) 
+![Radiator](/images/SFAOK.png)
 <br>
 
 Exploring NLP and spaCy using the psychedelia of the Super Furry Animals. SFAok!
@@ -27,4 +28,4 @@ You'll also need [textacy](https://chartbeat-labs.github.io/textacy/getting_star
 
 <b>06 - She's Got Spies </b>=> LDA Topic Analysis by Album.
 
-![DDLY](/images/album_wc/Dark Days-Light Years.png)
+![DDLY](/images/album_wc/DarkDays-LightYears.png)
