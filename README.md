@@ -27,4 +27,4 @@ You'll also need [textacy](https://chartbeat-labs.github.io/textacy/getting_star
 
 <b>06 - She's Got Spies </b>=> LDA Topic Analysis by Album.
 
-![DDLY](/images/albums/DarkDays-LightYears.jpg)
+![DDLY](/images/album_wc/DarkDays-LightYears.jpg)
