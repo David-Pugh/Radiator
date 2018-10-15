@@ -28,6 +28,46 @@ import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 from spacy.tokens import Doc
 
+def remove_parts(doc, stop=True, punct=True, num=True, digit=True,currency=True, url=True, email=True):
+    """
+    Selectively removes tags from a spaCy document based on
+
+    Parameters
+    ----------
+    doc :       spaCy Doc   document to filter
+    stop:       bool        indicates if stopwords will be removed
+    punct:      bool        indicates if stopwords will be removed (e.g., . , ! ?)
+    num:        bool        indicates if number like will be removed (e.g., 2, two, 10e3)
+    digit:      bool        indicates if digits will be removed (e.,g 2)
+    currency:   bool        indicates if currency symbols will be removed (e.g., €)
+    url:        bool        indicates if urls will be removed (e.g., bbc.co.uk)
+    email:      bool        indicates if emails will be removed (e.g., whoaru@myself.com)
+
+    Returns
+    -------
+    filtered spaCy document
+    """
+
+    token_pos = [None]
+
+    for t in doc:
+        if stop == True:
+            if t.is_stop != False: token_pos.append(t.i)
+        if punct == True:
+            if t.is_punct != False: token_pos.append(t.i)
+        if num == True:
+            if t.like_num != False: token_pos.append(t.i)
+        if digit == True:
+            if t.is_digit != False: token_pos.append(t.i)
+        if currency == True:
+            if t.is_currency != False: token_pos.append(t.i)
+        if url == True:
+            if t.like_url != False: token_pos.append(t.i)
+        if email == True:
+            if t.like_email != False: token_pos.append(t.i)
+
+    doc = Doc(doc.vocab, words=[t.text for i, t in enumerate(doc) if i not in token_pos])
+    return doc
 
 def remove_whitespace_entities(doc):
   """
@@ -82,48 +122,5 @@ def remove_punctuation(doc):
     """
     token_pos = [None]
     [token_pos.append(t.i) for t in doc if t.is_punct != False]
-    doc = Doc(doc.vocab, words=[t.text for i, t in enumerate(doc) if i not in token_pos])
-    return doc
-
-
-
-def remove_parts(doc, stop=True, punct=True, num=True, digit=True,currency=True, url=True, email=True):
-    """
-    Selectively removes tags from a spaCy document based on
-
-    Parameters
-    ----------
-    doc :       spaCy   document to filter
-    stop:       bool    indicates if stopwords will be removed
-    punct:      bool    indicates if stopwords will be removed (e.g., . , ! ?)
-    num:        bool    indicates if number like will be removed (e.g., 2, two, 10e3)
-    digit:      bool    indicates if digits will be removed (e.,g 2)
-    currency:   bool    indicates if currency symbols will be removed (e.g., €)
-    url:        bool    indicates if urls will be removed (e.g., bbc.co.uk)
-    email:      bool    indicates if emails will be removed (e.g., whoaru@myself.com)
-
-    Returns
-    -------
-    filtered spaCy document
-    """
-
-    token_pos = [None]
-
-    for t in doc:
-        if stop == True:
-            if t.is_stop != False: token_pos.append(t.i)
-        if punct == True:
-            if t.is_punct != False: token_pos.append(t.i)
-        if num == True:
-            if t.like_num != False: token_pos.append(t.i)
-        if digit == True:
-            if t.is_digit != False: token_pos.append(t.i)
-        if currency == True:
-            if t.is_currency != False: token_pos.append(t.i)
-        if url == True:
-            if t.like_url != False: token_pos.append(t.i)
-        if email == True:
-            if t.like_email != False: token_pos.append(t.i)
-
     doc = Doc(doc.vocab, words=[t.text for i, t in enumerate(doc) if i not in token_pos])
     return doc
