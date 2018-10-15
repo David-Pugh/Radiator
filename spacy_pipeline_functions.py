@@ -28,7 +28,7 @@ import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 from spacy.tokens import Doc
 
-def remove_parts(doc, stop=True, punct=True, num=True, digit=True,currency=True, url=True, email=True):
+def remove_parts(doc, stop=True, punct=True, space = True, num=True, digit=True,currency=True, url=True, email=True):
     """
     Selectively removes tags from a spaCy document based on
 
@@ -37,6 +37,7 @@ def remove_parts(doc, stop=True, punct=True, num=True, digit=True,currency=True,
     doc :       spaCy Doc   document to filter
     stop:       bool        indicates if stopwords will be removed
     punct:      bool        indicates if stopwords will be removed (e.g., . , ! ?)
+    space:      bool        indicates if spaces will be removed
     num:        bool        indicates if number like will be removed (e.g., 2, two, 10e3)
     digit:      bool        indicates if digits will be removed (e.,g 2)
     currency:   bool        indicates if currency symbols will be removed (e.g., €)
@@ -55,6 +56,8 @@ def remove_parts(doc, stop=True, punct=True, num=True, digit=True,currency=True,
             if t.is_stop != False: token_pos.append(t.i)
         if punct == True:
             if t.is_punct != False: token_pos.append(t.i)
+        if space == True:
+            if t.is_space != False: token_pos.append(t.i)
         if num == True:
             if t.like_num != False: token_pos.append(t.i)
         if digit == True:
