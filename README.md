@@ -2,7 +2,9 @@
 
 See the [spaCy](https://spacy.io) documents.
 
-![Radiator](/images/220px-Radiator-SFA.jpg) ![Radiator](/images/SFAOK.png)
+![Radiator](/images/220px-Radiator-SFA.jpg) 
+<br>
+![Radiator](/images/SFAOK.png)
 
 <br>
 
