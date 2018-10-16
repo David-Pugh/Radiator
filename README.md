@@ -18,14 +18,20 @@ You'll also need [textacy](https://chartbeat-labs.github.io/textacy/getting_star
 
 <b>01 - FurryVision(TM)</b> => 
 
-<b>02 - The Placid Casual </b>=> Using the default spaCy model, examining outputs and developing our own pipleine.
+<b>02 - The Placid Casual</b> => Using the default spaCy model, examining outputs and developing our own pipleine.
 
-<b>03 - The International Language of Screaming </b>=> Using our spaCy pipeline we will combine with Textacy to try and learn a bit more about the SFA from Wikipedia.
+<b>03 - The International Language of Screaming</b> => Using our spaCy pipeline we will combine with Textacy to try and learn a bit more about the SFA from Wikipedia.
 
-<b>04 - Demons </b>=> Using a spaCy pipeline we will process some lyrics and peform some topic analysis to undertand what type of things the SFA sing about.
+<b>04 - Demons </b> => Using a spaCy pipeline we will process some lyrics and peform some topic analysis to undertand what type of things the SFA sing about.
 
-<b>05 - Short Painkiller </b>=> Generating WordClouds by album.
+<b>05 - Short Painkiller</b> => Generating WordClouds by album.
 
-<b>06 - She's Got Spies </b>=> LDA Topic Analysis by Album.
+<b>06 - She's Got Spies</b> => LDA Topic Analysis by Album using Textacy.
+
+<b>07 - Play it Cool</b> => Using Topic Analysis using SciKit Learn directly.
+  
+<b>08 - Hermann ♥'s Pauline</b> => Sentiment Analysis using spaCy.
+
+<b>09 - Chupacabras</b> => Understanding the language Parser in more detail. 
 
 ![DDLY](/images/album_wc/Guerilla.png)
