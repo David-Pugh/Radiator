@@ -28,9 +28,9 @@ You'll also need [textacy](https://chartbeat-labs.github.io/textacy/getting_star
 
 <b>06 - She's Got Spies</b> => LDA Topic Analysis by Album using Textacy.
 
-<b>07 - Play it Cool</b> => Using Topic Analysis using SciKit Learn directly.
+<b>07 - Play it Cool</b> => Getting basic stats on the SAF lyrics.
   
-<b>08 - Hermann ♥'s Pauline</b> => Sentiment Analysis using spaCy.
+<b>08 - Hermann ♥'s Pauline</b> => Sentiment Analysis using spaCy and textaCy
 
 <b>09 - Chupacabras</b> => Understanding the language Parser in more detail. 
 
