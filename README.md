@@ -16,7 +16,7 @@ Before you start make sure you have installed spacy and the ```en``` model:
 
 You'll also need [textacy](https://chartbeat-labs.github.io/textacy/getting_started/quickstart.html) and [WordCloud](https://amueller.github.io/word_cloud/).
 
-<b>01 - FurryVision(TM)</b> => 
+<b>01 - FurryVision(TM)</b> => a Python script that allows you to check that re, spaCy, textaCy and matplotlib along with appopriate english models are installed in your environment.
 
 <b>02 - The Placid Casual</b> => Using the default spaCy model, examining outputs and developing our own pipleine.
 
